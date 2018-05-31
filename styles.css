@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 body{
    font-family: 'Roboto', sans-serif;
+   font-size: 20px;
    color: white;
    background-color: #444444;
    overflow: auto;
@@ -19,7 +20,7 @@ body{
 
 /*horizontal containers*/
 .hcontainer{
-  padding-top: 4em;
+  padding-top: 3.5em;
   min-width: 100%;
   width: 100%;
   display: block;
