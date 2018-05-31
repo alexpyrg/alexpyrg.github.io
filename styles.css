@@ -1,185 +1,71 @@
-/*Author Alexandros Pyrgiotakis*/
-@import url('https://fonts.googleapis.com/css?family=Arvo');
+/*Author: Alexandros Pyrgiotakis*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 body{
-/*font-family: 'PT Sans', sans-serif;*/
-font-family: 'Arvo', serif;
-font-size: 20px;
-
-font-weight: bold;
-}
-table{
- margin: 0 auto;
- text-align: center;
- vertical-align: middle;
- margin-top: 10%;
-}
-td{
-  padding: 0.625em;
-  min-height: 22em;
-    max-width: 25em;
-  width: 22em;
-  min-width: 24em;
-  background: rgba(30,30,30,0.1);
-
+   font-family: 'Roboto', sans-serif;
+   color: white;
+   background-color: #444444;
+   overflow: auto;
+   height: 90%;
+   width: 100%;
+   min-height: 99%;
+   min-width: 100%;
+   border: 0px solid red;
+   position: absolute;
+   margin: 0 0 0 0;
+   padding: 0 0 0 0;
 
 }
-.lng{
-  display: inline-block;
-}
-td#td_l h1{
-  font-size: 40px;
-  display: inline;
-}
-td#td_l{
-  border-right:0em solid black;
 
 
-}
-td#r{
-  font-size: 20px;
-
-}
-/*btns--*/
-.cont1{
-  margin: 0 auto;
-  margin-top: 2em;
+/*horizontal containers*/
+.hcontainer{
+  padding-top: 4em;
+  min-width: 100%;
+  width: 100%;
+  display: block;
+  height: calc(100%/3);
+  max-height: calc(100%/3);
+  border: 0px solid purple;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   align-content: center;
-  justify-content: center;
-  width: 53%;
-  border: 0px solid black;
+  align-items: center;
+  overflow:auto;
+
 }
-.cont1#inter{
-    background: rgba(30,30,30,0.1); /*linear-gradient(to bottom right, rgba(113, 154, 221,0.7),rgba(81,126,198,0.7));*/
+
+#first{background-image: url("imgs/Programming_mn.jpg");}
+#second{background-image: url("imgs/pc_bg.jpg");}
+#third{background-image: url("imgs/findme.jpg");}
+
+/*Title containers/Just Titles Content*/
+.title{
 }
-h1#interh{
-  /*color: #dce3ef;*/
-display: inline;
-padding-top: 10px;
-padding-left: 10px;
-padding-bottom: 10px;
-}
-h2#inh2{
-  display: inline;
-  padding-left: 1em;
-}
-.pill{ /*To be used late*/
-  height: 5em;
-  -webkit-border-radius: 16px;
-  -moz-border-radius: 16px;
-  border-radius: 16px;
-}
-.btn_main{ /*For now contact button*/
-  height: 3em;
-  width: auto;
-  max-width: 16em;
+.title#bld{font-weight: 400;}
+#ttl{align-self: center;
   margin: 0 auto;
-  font-size: 24px;
-  line-height: 2.8em;
-  text-decoration: none;
-/*  background-color: #EDAE49;*//* alt.rgba(90,90,90,0.2) <--- Gray*/
-background: rgba(30,30,30,0.1);
-  border: 0px;
+}
+/*Dialog containers Content*/
+.dlg{
   text-align: center;
-  padding: 0 auto;
-  -webkit-transition:background-color 1000ms ease-in-out;
-  -ms-transition:background-color 1000ms ease-in-out;
-  transition: background-color 500ms ease-in-out;
+  border-radius: 2em;
+  background-color: rgba(20,20,20,0.9);
+  height: 80%;
+  overflow: auto;
+  width: 80%;
+  margin:0 auto;
+  padding: 0em 3em 0em 3em;
+}
+/*L*/
 
+/*R*/
+#lng{
+ color: red;
 }
-.btn_main:hover{
-/*background-color: rgba(237, 174, 73,0.5);*/
-background: rgba(30,30,30,0.5);
-}
-/*Other stuff*/
-.lng{ /*Indicating a coding language*/
-  display: inline;
-  color: purple;
-}
-.tech{ /*Highlighting*/
-  display: inline;
-  color: #ff1111;
-}
-.rfnc{ /*Highlighting*/
-  display: inline;
-  color: #0033ff;
-  text-decoration: underline;
-}
-/*Modal*/
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-    position: relative;
-
-    background-color: rgba(255, 255, 255,1);
-    margin: auto;
-    padding: 0;
-    border-bottom: 0px solid rgba(255, 255, 255,0.5);
-  border-radius:1em;
-    border-top: 0px solid rgba(255, 255, 255,0.5);
-    width: 50%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s
-}
-
-/* Add Animation */
-@-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
-}
-
-@keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
-}
-
-/* The Close Button */
-.close {
-    color: rgba(30,30,30,.2);
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.modal-header {
-  /*border-radius:8em;*/
-
-    padding: 2px 16px;
-    background-color: rgba(255, 255, 255,1);
-    color: black;
-}
-
-.modal-body {padding: 2px 16px; height: 6em; padding-top: 4em;
-   border-top: 1px solid black;
-     border-bottom:  1px solid black;
-}
-
-.modal-footer {
-  /*border-radius:8em;*/
-
-    padding: 2px 16px;
-    background-color: rgba(255, 255, 255,1);
-    color: black;
+/*modal*/
+.footer{
+  text-align: center;
+  width: 100%;
+  padding: 1em 0em 1em 0em;
 }
