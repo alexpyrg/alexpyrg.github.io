@@ -1,98 +1,228 @@
-/*Author: Alexandros Pyrgiotakis*/
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-body{
-   font-family: 'Roboto', sans-serif;
-   font-size: 20px;
-   color: white;
-   background-color: #444444;
-   overflow: auto;
-   height: 90%;
-   width: 100%;
-   min-height: 99%;
-   min-width: 100%;
-   border: 0px solid red;
-   position: absolute;
-   margin: 0 0 0 0;
-   padding: 0 0 0 0;
-   overflow-x: hidden;
-
+html,body{
+    width: 100%;
+    height:auto;
+    top:0;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(14, 14, 14);
+    font-family: 'Cascadia Code';
+    color: rgb(199, 199, 199);
+    font-weight: 600;
+    overflow: hidden;
+    
 }
 
+.listalign{
+    display: block;
+    text-align: left;
+    width: fit-content;
+    margin: .3rem auto;
+    color: rgb(214, 214, 214);
+}
+.container{
+    height: auto;
+    width: 80%;
+    margin:0 auto;
+    align-self: center;
+    /* border: 1px solid blue; */
+}
+.ptitle{
+    width: 30%;
+    margin: 3rem auto;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.ptitle > h4 > a{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color:rgb(179, 205, 226);
+}
+.ptitle > h4{
+    margin: 0;
+    padding: 0;
+    color:rgb(182, 182, 182);
+}
+.ptitle > h2{
 
-/*horizontal containers*/
-.hcontainer{
-  padding-top: 3.5em;
-  min-width: 100%;
-  width: 100%;
-  display: block;
-  height: calc(100%/3);
-  max-height: calc(100%/3);
-  border: 0px solid purple;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  align-content: center;
-  align-items: center;
-  overflow:auto;
-    overflow-x: hidden;
-
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
-#first{background-image: url("imgs/Programming_mn.jpg");}
-#second{background-image: url("imgs/pc_bg.jpg");}
-#third{background-image: url("imgs/findme.jpg");}
+.paracard{
+    margin: 3rem auto;
+    height: fit-content;
+    width: 40%;
+    border: 0px solid yellow;
+    align-self: center;
+    /* background-color: rgb(104, 104, 104); */
+    text-align: center;
+}
+.paracard > p{
+    display: inline-block;
+    max-width: 100%;
+    text-align: center;
+    font-weight: 400;
+   
+}
+.paracard > .photo_right{
+    display: inline-block;
+    background-image: url('imgs/pc_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    float: right;
+    width: 20%;
+    height: 100%;
+    right: 0;
+    background-color: rgb(45,45,45);
+}
+.paracard > .photo_left{
+    display: inline-block;
+    background-image: url('imgs/pc_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 20%;
+    height: 100%;
+    float: left;
+    left: 0;
+    background-color: rgb(45,45,45);
+    text-align: center;
+}
 
-/*Title containers/Just Titles Content*/
-.title{
+.paracard > p {
+    padding: 0;
+    margin:0;
+    padding-left: .5rem;
+    padding-right: .5rem;
 }
-.title#bld{font-weight: 400;}
-#ttl{align-self: center;
-  margin: 0 auto;
+.paracard > h2 {
+    color:rgb(186, 214, 238);
 }
-/*Dialog containers Content*/
-.dlg{
-  text-align: center;
-  border-radius: 2em;
-  background-color: rgba(20,20,20,0.9);
-  height: 80%;
-  overflow: auto;
-  width: 80%;
-  margin:0 auto;
-  padding: 0em 3em 0em 3em;
-  overflow-x: hidden;
+.paracard > p > a:hover {
+    display: inline-block;
+    transform: scale(1.2);
+    background-color: rgb(45,45,45);
+    transition: ease-in-out .4s;
+    padding: .3rem .3rem .3rem .3rem;
+    z-index: 4;
 }
-/*L*/
 
-/*R*/
-#lng{
- color: red;
+.findme{
+    position: relative;
+    width:auto;
+    margin: 0 auto;
+    text-align: center;
+  
 }
-/*modal*/
-.footer{
-  text-align: center;
-  width: 100%;
-  padding: 1em 0em 1em 0em;
+.findme > span{
+    display: inline-block;
+    padding-right: .3rem;
+    padding-left: .3rem;
+    transition: ease-in-out .3s;
+    padding: .4rem;
+
+}
+.findme>a{
+    display: inline-block;
+}
+.findme > h4 {
+    font-weight: 300;
+    color:rgb(68, 216, 184);
+}
+.findme > h2 {
+    color:rgb(186, 214, 238);
+}
+span > a {
+    padding: 0;
+    margin: 0;
 }
 a{
-  color: #ffffff;
-  display: inline;
-  padding: 0em 0.5em 0em 0.5em;
+    text-decoration: none;
+    color:rgb(33, 218, 144);
 }
-::-webkit-scrollbar-thumb{
-  border-radius: 2em;
-  background: rgba(120,120,120,0.5);
+#linkedin{
+    color: rgb(63, 138, 205)!important;
 }
-::-webkit-scrollbar-track{
-  background: transparent;
+#github{
+    color: rgb(127, 63, 205)!important;
 }
-::-webkit-scrollbar-thumb:hover {
-    background: rgba(10,10,10,0.5);
+#instagram{
+    color: rgb(209, 44, 184)!important;
+}
+#steam{
+    color:rgb(58, 65, 103)!important;
+}
+.findme > span:hover{
+    transform: scale(1.2);
+    transition: .3s;
+    /* color: red!important; */
+    background-color: rgba(255, 255, 255, .2);
+    z-index: 4;
+}
 
+
+
+@media screen and (max-width: 1920px){
+    .container{
+        width: 100%;
+      
+    }
+    .paracard{
+        width: 45%;
+    }
+    }
+    .findme > span {
+        font-size: 1.3rem;
+        transition: ease-in-out .3s;
+    }
+  
+    
+
+@media screen and (max-width: 1000px){
+    .container{
+        width: 100%;
+    }
+    .paracard{
+        width: 100%;
+    }
+    .ptitle{
+        width: 70%;
+    }
+
+    .findme>a{
+        display: block;
+    }
+    .findme > span {
+        display: block;
+        font-size: 1.6rem;
+        transition: ease-in-out .3s;
+        width: fit-content;
+        margin: 0 auto;
+    }
 }
-::-webkit-scrollbar {
-    width: 0.2em;
-}
-div::-webkit-scrollbar {
-    width: 0.2em;
-    left: 0;
-}
+
+@media screen and (max-width: 750px){
+    .container{
+     
+    }
+    .paracard{
+     
+    }
+    .ptitle{
+      
+    }
+    
+    .findme>a{
+      
+    }
+    .findme > span {
+    
+    }
+    }
+    
+
+
+
+
